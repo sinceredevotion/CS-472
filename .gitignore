@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+Assignment 3/.vscode/tasks.json
+Assignment 3/.vscode/settings.json
+Assignment 3/.vscode/launch.json
+Assignment 3/.vscode/c_cpp_properties.json
