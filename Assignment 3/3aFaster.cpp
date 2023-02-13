@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <cmath>
+
 using namespace std;
 
 double arr[10000000];
@@ -40,7 +42,10 @@ int main() {
 
     for (int j = 10000; j <= 1000000; j+= 10000)
     {
-        cout << j << ": " << quicksort (double(j)) << endl;
+        double calcLog = j*log2(j);
+        double tOfN = quicksort (double(j));
+        double c = tOfN / calcLog;
+        cout << j << ":" << tOfN << ":" << calcLog << ":" << c << endl;
     }
     
     return 0;
